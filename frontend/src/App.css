@@ -1,0 +1,134 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+  background: #f9f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #7c3aed;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.submit-btn {
+  background: #ffde59;
+  color: #222;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #e0e0e0;
+  transition: background 0.2s;
+}
+.submit-btn:hover {
+  background: #ffe98a;
+}
+
+.pair-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.pair-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 16px #e0e0e0;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s;
+  border: 2px solid #e0e7ff;
+}
+.pair-card:hover {
+  transform: scale(1.04) rotate(-2deg);
+  border-color: #7c3aed;
+}
+.pair-logo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.pair-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f3f3f3;
+}
+.pair-desc {
+  color: #555;
+  font-size: 1rem;
+  margin: 0.5rem 0 0.2rem 0;
+  text-align: center;
+}
+.pair-status {
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
+.pair-address {
+  font-size: 0.85rem;
+  color: #aaa;
+  word-break: break-all;
+  margin-top: 0.2rem;
+}
