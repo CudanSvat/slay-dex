@@ -132,3 +132,91 @@ h1 {
   word-break: break-all;
   margin-top: 0.2rem;
 }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fffbe7;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px #e0e0e0;
+  padding: 2rem 1.5rem;
+  min-width: 320px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.modal h2 {
+  margin-top: 0;
+  color: #ff9800;
+  font-size: 1.5rem;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+}
+.modal input, .modal textarea {
+  border: 2px solid #ffe082;
+  border-radius: 0.7rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  width: 100%;
+  background: #fff;
+}
+.modal textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+.modal button[type="submit"] {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.modal button[type="submit"]:hover {
+  background: #a084ee;
+}
+.close-btn {
+  background: #ffde59;
+  color: #222;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px #e0e0e0;
+}
+.success-msg {
+  background: #eaffd0;
+  color: #2e7d32;
+  border-radius: 1rem;
+  padding: 0.7rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px #c8e6c9;
+  animation: pop 0.3s;
+}
+@keyframes pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
